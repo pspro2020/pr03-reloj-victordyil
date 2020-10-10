@@ -12,10 +12,11 @@ public class Reloj implements Runnable {
             try {
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
-                System.out.println("El hilo secundario ya ha termindado de ejecutarse");
+                System.out.println("Me han interrumpido!");
                 return;
             }
 
         }
+        System.out.println("El hilo secundario ya ha termindado de ejecutarse");
     }
 }
